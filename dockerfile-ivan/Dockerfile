@@ -13,6 +13,7 @@ RUN yum install -y httpd && \
     chgrp -R 0 /directorio && \
     chmod -R g+rxw /directorio 
 COPY index.html /var/www/html/
+COPY index1.html /var/www/html/
 EXPOSE 8080
 VOLUME /directorio
 CMD ["httpd","-D","FOREGROUND"]
