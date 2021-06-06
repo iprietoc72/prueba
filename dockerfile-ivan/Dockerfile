@@ -4,7 +4,7 @@ LABEL io.k8s.display-name="display-name ivan" \
       io.openshift.tag="apache,ivan" \
       io.openshift.expose-services="8080:http" 
 
-
+#comentario
 RUN yum install -y httpd && \
     yum clean all && \
     sed -i "s/Listen 80/Listen 8080/g" /etc/httpd/conf/httpd.conf && \
